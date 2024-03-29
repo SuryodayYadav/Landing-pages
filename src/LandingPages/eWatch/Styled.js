@@ -1,5 +1,5 @@
 import styled from "@emotion/styled";
-import { Box, ButtonBase } from "@mui/material";
+import { Box, ButtonBase, Grid } from "@mui/material";
 
 export const BolderContent = styled(Box)(() => ({
     width: '629px', 
@@ -91,8 +91,12 @@ export const FontCirclediv = styled('div')(() => ({
     alignItems: 'center'    
 }))
 
-export const FontCircleText = styled('span')(() => ({
+export const FontCircleText = styled('div')(() => ({
     position: 'absolute',
+    top: '50%', 
+    left: '50%',
+    transform: 'translate(-50%, -50%)',
+    fontFamily: 'Times'
 }))
 export const ImageGroupBox = styled(Box)(() => ({
     margin: '160px',
@@ -125,7 +129,6 @@ export const BoxStar = styled('div')(() => ({
 }))
 
 export const Unsplash = styled(Box)(() => ({
-    position: 'relative',
     width: '480px', 
     height: '628px',
     display: 'flex',
@@ -133,7 +136,12 @@ export const Unsplash = styled(Box)(() => ({
     alignContent: 'center',
     borderRadius: '52px',
     marginTop: '20%', 
-    marginLeft: '15%'
+    marginLeft: '15%',
+    flexGrow: '1'
+}))
+
+export const ImageContainer = styled(Grid)(() => ({
+    position: 'relative'
 }))
 
 export const Stroke2 = styled(Box)(() => ({
@@ -142,8 +150,58 @@ export const Stroke2 = styled(Box)(() => ({
     height: '476px',
     border: '2px solid black',
     borderRadius: '0px 40px 40px 40px',
-    margin: '60% 05% 0% 60%'
+    margin: '60% 0% 0% 65%'
 }))
 
+export const EwatchInfoLayout = styled(Box)(() => ({
+    display: 'flex',
+    flexDirection: 'column'
+}))
+export const EwatchLayout = styled(Box)(() => ({
+    display: 'flex',
+    flexDirection: 'row',
+    justifyContent: 'space-between'
+}))
+
+export const Star1 = styled(Box)(() => ({
+    width: '102px', 
+    height: '130px',
+    bottom: '30px',
+    right: '20px',
+    position: 'absolute'
+}))
+export const Star2 = styled(Box)(() => ({
+    width: '75px', 
+    height: '95px',
+    top: '60px',
+    left: '45px',
+    position: 'absolute'
+}))
+
+export const Tag1 = styled('div')(() => ({
+    width: '180px', 
+    height: '18px',
+    top: '45px',
+    right: '-30px',
+    borderRadius: '16px',
+    padding: '16px 24px',
+    gap: '8px',
+    backgroundColor: '#685FD4',
+    color: '#fff',
+    position: 'absolute'
+}))
+
+export const Tag2 = styled(Box)(() => ({
+    width: '180px', 
+    height: '18px',
+    bottom: '30px',
+    left: '-36px',
+    borderRadius: '16px',
+    padding: '16px 24px',
+    gap: '8px',
+    backgroundColor: '#685FD4',
+    color: '#fff',
+    position: 'absolute'
+}))
 
 

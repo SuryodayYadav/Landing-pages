@@ -3,16 +3,19 @@ import Content from './Content';
 import List from './List';
 import FontCircle from './FontCircle';
 import ImageGroup from './ImgGroup';
+import { EwatchInfoLayout, EwatchLayout } from './Styled';
 
 
-function EWatch(){
-    return(
-        <React.Fragment>
-            <FontCircle />
-            <Content />
-            <List />
+function EWatch() {
+    return (
+        <EwatchLayout>
+            <EwatchInfoLayout>
+                <FontCircle />
+                <Content />
+                <List />
+            </EwatchInfoLayout>
             <ImageGroup />
-        </React.Fragment>
+        </EwatchLayout>
     )
 }
 

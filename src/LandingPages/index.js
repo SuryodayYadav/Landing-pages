@@ -1,12 +1,14 @@
 import React from 'react';
-//  import Nature from './Nature';
-import EWatch from './eWatch';
+import CardDesign from './cardesign';
+// import Nature from './Nature';
+//  import EWatch from './eWatch';
 
 function LandingPages(){
     return(
       <React.Fragment>
-        {/* <Nature /> */}
-        <EWatch />
+        {/* <Nature />
+        <EWatch /> */}
+        <CardDesign />
       </React.Fragment>
     )
 }
