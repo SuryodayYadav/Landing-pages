@@ -1,13 +1,13 @@
-import { Box, ButtonBase } from "@mui/material";
-import { styled } from "@mui/styles";
+import { Box, ButtonBase, Grid } from "@mui/material";
+import styled from '@emotion/styled'
 
-export const CompWrapper = styled(Box)(() => ({
+export const CompWrapper = styled('div')(() => ({
     display: 'flex',
     flexDirection: 'row',
+    width: '100vw',
+    height: '185vh',
+    backgroundColor: '#2F2F2F !important',
     justifyContent: 'space-around',
-    width: '90%',
-    height: '90%',
-    background: '#2F2F2F',
     margin:'auto'
 }))
 
@@ -18,7 +18,7 @@ export const TextWrapper = styled(Box)(() => ({
     width: '450px',
     height: '580px',
     top: '100px',
-    left: '130px',
+    left: '100px',
     alignContent: 'center'
 }))
 export const HeaderWrapper = styled(Box)(() => ({
@@ -41,6 +41,8 @@ export const ParaWrapper = styled('p')(() => ({
 
 export const CardWrapper = styled(Box)(() => ({
     display: 'flex',
+    flexWrap: 'wrap',
+    position:'relative',
     flexDirection: 'column',
     width: '750px',
     height: '800px',
@@ -50,13 +52,20 @@ export const CardWrapper = styled(Box)(() => ({
 }))
 
 export const ExploreButton = styled(ButtonBase)(() => ({
-    width: '180px',
-    height: '66px',
-    borderRadius: '36px',
+    width: '160px',
+    height: '50px',
+    borderRadius: '30px',
     fontSize: '18px',
-    padding: '24px 48px',
+    padding: '20px 40px',
     color: 'black', 
     background: 'white',
-    gap: '30px',
+    marginTop: '50px',
+}))
 
+export const ImageGrid = styled(Grid)(() => ({
+    width: 'calc(25% - 10px)', 
+    height: 'calc(25% - 10px)',
+    margin: '5px',
+    borderRadius: '20px',
+    overflow: 'hidden'
 }))
