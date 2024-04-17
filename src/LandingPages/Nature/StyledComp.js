@@ -5,7 +5,8 @@ import Box from '@mui/material/Box'
 export const ImageWrapper = styled(Box)(() => ({
     display: 'flex',
     flexDirection: 'row',
-    justifyContent: 'space-around'
+    justifyContent: 'space-around',
+    marginBottom: '30px'
 }))
 
 export const BoxWrapper = styled(Box)(() => ({
@@ -35,6 +36,7 @@ export const DiscoverTypography = styled(Box)(() => ({
 export const ParaTypography = styled(Box)(() => ({
     width: '386px',
     height: '144px',
+    marginTop: '30px'
 }))
 
 export const PrimaryButton = styled(ButtonBase)(() => ({
@@ -43,7 +45,8 @@ export const PrimaryButton = styled(ButtonBase)(() => ({
     borderRadius: '16px',
     padding:'16px, 32px, 16px, 32px',
     gap: '10px',
-    backgroundColor: 'rgba(37, 37, 37, 1)'
+    backgroundColor: 'rgba(37, 37, 37, 1)',
+    marginTop: '30px'
 }))
 
 export const LeftImage = styled(Box)(() => ({
