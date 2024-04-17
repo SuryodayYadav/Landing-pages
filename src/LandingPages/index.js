@@ -1,5 +1,6 @@
 import React from 'react';
-import CardDesignPro from './cardesign';
+import TeaCofee from './TeaCoffee';
+// import CardDesignPro from './cardesign';
 // import Nature from './Nature';
 //  import EWatch from './eWatch';
 
@@ -8,7 +9,8 @@ function LandingPages(){
       <React.Fragment>
         {/* <Nature />
         <EWatch /> */}
-        <CardDesignPro />
+        {/* <CardDesignPro /> */}
+        <TeaCofee />
       </React.Fragment>
     )
 }
