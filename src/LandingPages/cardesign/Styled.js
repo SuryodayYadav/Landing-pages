@@ -1,25 +1,23 @@
-import { Box, ButtonBase, Grid } from "@mui/material";
+import { Box, ButtonBase } from "@mui/material";
 import styled from '@emotion/styled'
 
 export const CompWrapper = styled('div')(() => ({
     display: 'flex',
     flexDirection: 'row',
     width: '100vw',
-    height: '185vh',
-    backgroundColor: '#2F2F2F !important',
+    height: '150vh',
+    backgroundColor: '#2F2F2F',
     justifyContent: 'space-around',
-    margin:'auto'
 }))
 
 export const TextWrapper = styled(Box)(() => ({
     display: 'flex',
     flexDirection: 'column',
-    position: 'relative',
+    position: 'absolute',
     width: '450px',
-    height: '580px',
-    top: '100px',
-    left: '100px',
-    alignContent: 'center'
+    height: '680px',
+    top: '250px',
+    left: '100px'
 }))
 export const HeaderWrapper = styled(Box)(() => ({
     display: 'flex',
@@ -30,6 +28,7 @@ export const HeaderWrapper = styled(Box)(() => ({
 export const ParaWrapper = styled('p')(() => ({
     display: 'flex',
     flexDirection: 'column',
+    marginTop: '30px',
     width: '300px',
     height: '200px',
     fontSize: '24px',
@@ -39,33 +38,26 @@ export const ParaWrapper = styled('p')(() => ({
     fontFamily: 'cursive'
 }))
 
-export const CardWrapper = styled(Box)(() => ({
-    display: 'flex',
-    flexWrap: 'wrap',
-    position:'relative',
-    flexDirection: 'column',
-    width: '750px',
-    height: '800px',
-    top: '20px',
-    right: '30px',
-    flexGrow: '1'
-}))
-
 export const ExploreButton = styled(ButtonBase)(() => ({
     width: '160px',
     height: '50px',
     borderRadius: '30px',
     fontSize: '18px',
     padding: '20px 40px',
-    color: 'black', 
+    color: 'black',
     background: 'white',
-    marginTop: '50px',
+    marginTop: '70px',
 }))
 
-export const ImageGrid = styled(Grid)(() => ({
-    width: 'calc(25% - 10px)', 
-    height: 'calc(25% - 10px)',
-    margin: '5px',
-    borderRadius: '20px',
-    overflow: 'hidden'
+export const ImageWrapper = styled(Box)(() => ({
+    display: 'grid',
+    gridTemplateColumns: 'repeat(4, 1fr)',
+    gridTemplateRows: 'repeat(4, 1fr)',
+    gridGap: '10px',
+    position: 'absolute',
+    width: '850px',
+    height: '800px',
+    top: '100px',
+    left: '550px'
 }))
+
